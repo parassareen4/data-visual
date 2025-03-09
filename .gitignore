@@ -21,3 +21,4 @@ __pycache__/
 # MacOS and Linux system files
 .DS_Store
 *.swp
+uploads

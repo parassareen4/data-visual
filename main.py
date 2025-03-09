@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from file_upload import router as file_upload_router
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"message":"Welcome to the Data Visualizer API!"}
+app.include_router(file_upload_router)
